@@ -6,7 +6,7 @@ app= Flask(__name__)
 
 #setting Api keys 
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDGAwJxQRUSzomuH5dq8fbI9Ce0TjmLg3I"
+os.environ["GOOGLE_API_KEY"] = "Your_Api"
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 model = genai.GenerativeModel("models/gemini-1.5-pro")
